@@ -1,0 +1,154 @@
+<?xml version="1.0" encoding="utf-8"?>
+<FrameLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:orientation="horizontal"
+    android:layout_width="fill_parent"
+    android:layout_height="fill_parent">
+
+    <!-- Camera Preview Overlay -->
+
+    <FrameLayout
+        android:id="@+id/camera_preview"
+        android:layout_width="fill_parent"
+        android:layout_height="fill_parent">
+
+    </FrameLayout>
+
+    <!-- Color Preview Palette -->
+
+    <TextView
+        android:id="@+id/color_preview"
+        android:layout_width="157dp"
+        android:layout_height="47dp"
+        android:layout_gravity="right|bottom"
+        android:background="#000"
+        android:gravity="center"
+        android:text="@string/font_colour"
+        android:textSize="20dp" />
+
+    <!-- Crosshair -->
+
+    <View
+        android:layout_width="242dp"
+        android:layout_height="2dp"
+        android:layout_gravity="center"
+        android:background="#BCCC" />
+
+    <!-- Crosshair -->
+
+    <View
+        android:layout_width="61dp"
+        android:layout_height="2dp"
+        android:layout_gravity="center|left"
+        android:layout_marginBottom="70dp"
+        android:layout_marginLeft="10dp"
+        android:background="#BCCC" />
+
+    <View
+        android:layout_width="61dp"
+        android:layout_height="2dp"
+        android:layout_gravity="center|right"
+        android:layout_marginBottom="70dp"
+        android:layout_marginRight="10dp"
+        android:background="#BCCC" />
+
+    <View
+        android:layout_width="61dp"
+        android:layout_height="2dp"
+        android:layout_gravity="center|right"
+        android:layout_marginRight="10dp"
+        android:layout_marginTop="70dp"
+        android:background="#BCCC" />
+
+    <View
+        android:layout_width="61dp"
+        android:layout_height="2dp"
+        android:layout_gravity="center|left"
+        android:layout_marginLeft="10dp"
+        android:layout_marginTop="70dp"
+        android:background="#BCCC" />
+
+    <View
+        android:layout_width="2dp"
+        android:layout_height="58dp"
+        android:layout_gravity="center"
+        android:background="#BCCC" />
+
+    <View
+        android:layout_width="2dp"
+        android:layout_height="35dp"
+        android:layout_gravity="center|left"
+        android:layout_marginBottom="52dp"
+        android:layout_marginLeft="10dp"
+        android:background="#BCCC" />
+
+    <View
+        android:layout_width="2dp"
+        android:layout_height="35dp"
+        android:layout_gravity="center|right"
+        android:layout_marginBottom="52dp"
+        android:layout_marginRight="10dp"
+        android:background="#BCCC" />
+
+    <View
+        android:layout_width="2dp"
+        android:layout_height="35dp"
+        android:layout_gravity="center|left"
+        android:layout_marginTop="52dp"
+        android:layout_marginLeft="10dp"
+        android:background="#BCCC" />
+
+    <View
+        android:layout_width="2dp"
+        android:layout_height="35dp"
+        android:layout_gravity="center|right"
+        android:layout_marginTop="52dp"
+        android:layout_marginRight="10dp"
+        android:background="#BCCC" />
+
+    <!-- Capture Button -->
+
+    <Button
+        android:id="@+id/button_capture"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_gravity="center_vertical|right"
+        android:text="@string/capture" />
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="42dp">
+
+        <!-- App Name Label -->
+
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="fill_parent"
+            android:gravity="center"
+            android:text="@string/app_name" />
+
+        <!-- Manual Input textbox -->
+
+        <EditText
+            android:id="@+id/location_name"
+            android:layout_width="0dip"
+            android:layout_height="fill_parent"
+            android:layout_weight="1"
+            android:ems="10"
+            android:gravity="left|center_horizontal"
+            android:hint="@string/manually">
+
+            <requestFocus />
+        </EditText>
+
+        <!-- Manual Find Button -->
+
+        <Button
+            android:id="@+id/button_find"
+            android:layout_width="wrap_content"
+            android:layout_height="fill_parent"
+            android:gravity="center"
+            android:text="@string/find" />
+
+    </LinearLayout>
+
+</FrameLayout>

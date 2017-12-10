@@ -1,0 +1,94 @@
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="#ccc"
+    android:orientation="vertical">
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:orientation="vertical">
+
+        <!-- Name Value -->
+
+        <TextView
+            android:id="@+id/name_sub"
+            android:layout_width="fill_parent"
+            android:layout_height="wrap_content"
+            android:textColor="#222299"
+            android:textSize="30dp" />
+
+        <!-- Submit Review Label -->
+
+        <TextView
+            android:layout_width="fill_parent"
+            android:layout_height="wrap_content"
+            android:layout_marginBottom="5dip"
+            android:layout_marginTop="10dip"
+            android:text="@string/submit_new"
+            android:textSize="16dp"
+            android:textStyle="bold" />
+
+        <!-- Logged-In-As value -->
+
+        <TextView
+            android:id="@+id/logged_in_as_sub"
+            android:layout_width="fill_parent"
+            android:layout_height="wrap_content"
+            android:layout_marginBottom="5dip"
+            android:layout_marginTop="10dip"
+            android:text="@string/logged_in_as"
+            android:textSize="18dp" />
+
+        <!-- Review Edit Text -->
+
+        <EditText
+            android:id="@+id/text_review_sub"
+            android:layout_width="match_parent"
+            android:layout_height="0dip"
+            android:layout_weight="21.80"
+            android:ems="10"
+            android:gravity="center_vertical|top"
+            android:inputType="textMultiLine"></EditText>
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content">
+
+            <!-- Back Button -->
+
+            <Button
+                android:id="@+id/btn_back_sub"
+                android:layout_width="fill_parent"
+                android:layout_height="wrap_content"
+                android:layout_marginTop="5dip"
+                android:layout_weight="0.4"
+                android:text="@string/back" />
+
+            <!-- Submit Button -->
+
+            <Button
+                android:id="@+id/btn_add_sub"
+                android:layout_width="fill_parent"
+                android:layout_height="wrap_content"
+                android:layout_marginTop="5dip"
+                android:layout_weight="0.2"
+                android:text="@string/submit_review" />
+        </LinearLayout>
+    </LinearLayout>
+
+    <!-- WebView for displaying the login screen -->
+
+    <WebView
+        android:id="@+id/webview"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        tools:context=".ReviewSubmitActivity"
+        android:layout_alignParentBottom="true"
+        android:layout_alignParentLeft="true"
+        android:layout_alignParentRight="true"
+        android:layout_alignParentTop="true"
+        android:focusable="true" />
+
+</RelativeLayout>

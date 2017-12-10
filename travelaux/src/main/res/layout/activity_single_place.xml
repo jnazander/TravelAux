@@ -1,0 +1,18 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="#ccc"
+    android:orientation="vertical"
+    android:scrollbars="vertical">
+
+    <!-- The list, which will be filled with reviews -->
+
+    <ListView
+        android:id="@+id/list_reviews"
+        android:layout_width="fill_parent"
+        android:layout_height="fill_parent"
+        android:layout_margin="2dp"
+        android:orientation="vertical"></ListView>
+
+</LinearLayout>

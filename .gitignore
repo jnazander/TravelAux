@@ -1,0 +1,10 @@
+bin/
+gen/
+build/
+travelaux/build/
+.idea/
+.gradle/
+local.properties
+.settings
+lint.xml
+*.log
